@@ -50,4 +50,8 @@ Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
 //图片上传路由
 Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
 
+//消息路由
 Route::resource('replies', 'RepliesController', ['only' => ['store', 'destroy']]);
+
+//通知路由
+Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);
