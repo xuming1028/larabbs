@@ -13,4 +13,6 @@ class Reply extends Model
     public function topic(){
         return $this->belongsTo(Topic::class);
     }
+
+
 }
